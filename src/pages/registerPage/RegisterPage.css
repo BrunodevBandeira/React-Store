@@ -1,0 +1,64 @@
+#register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 2rem;
+    background: url(../../assets/pc7.jpg);
+    background-size: cover;
+  }
+
+
+#register .form{
+    background-color: rgba(204, 204, 204, 0.302);
+    /* background-color: #3255b096; */
+    /* background: linear-gradient(to right, #3255b096 40%, #5f9ea0dc, #e5e532); */
+    backdrop-filter: blur(5px);
+    width: 100%;
+    max-width: 31rem;
+    height: 15rem;
+    padding: 0.5rem;
+    border-radius: .8rem;
+    padding-top: 1.8rem;
+}
+
+#register .field {
+    padding-bottom: 0.5rem;
+}
+
+#register .field label {
+    display: block;
+    font-weight: 600;
+    color: azure;
+}
+
+#register .field input {
+    width: 100%;
+    height: 1.5rem;
+    background: linear-gradient(to left, transparent, #ccc);
+    transition: all 2s;
+}
+
+#register .field input:hover {
+    background: #fff;
+}
+
+#register .field input::placeholder {
+    color: #000;
+    font-weight: 400;
+}
+
+#register .actions {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+#register .actions button{
+    width: 15rem;
+    height: 2rem; 
+    background: #ccc; 
+};
+ 

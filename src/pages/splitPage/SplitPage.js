@@ -1,6 +1,8 @@
 import React from "react";
 import  "./SplitPage.css";
 import { Link } from "react-router-dom";
+import Head from "../../components/Head";
+
 
 const SplitPage = () => {
 
@@ -28,6 +30,7 @@ const SplitPage = () => {
 
     return(
         <div className="container" onMouseMove={handleEffect}>
+            <Head title="Seja bem vindo" description="SplitPage"/>
             <div className="split left">
                 <h1> Logar... </h1>
                 <Link to="/login" href="#" className="btn"> Entre </Link>

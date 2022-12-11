@@ -1,6 +1,8 @@
 import React from "react";
 import "./RegisterPage.css";
 import { AuthContext  } from "../../context/Auth";
+import Head from "../../components/Head";
+
 
 
 const RegisterPage = () => {
@@ -21,6 +23,7 @@ const RegisterPage = () => {
 
     return(
         <div id="register" onSubmit={handleSubmit}>
+           <Head title="Cadastre-se" description="registerPage"/>
              <h1 className="title"> Cadastre-se </h1>
              <form className="form">
 

@@ -1,9 +1,14 @@
 import React from 'react'
 import "./HomePage.css";
+import Head from "../../components/Head";
+
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <section>
+        <Head title="Home" description="HomePage"/>
+        <div>HomePage</div>
+    </section>
   );
 };
 

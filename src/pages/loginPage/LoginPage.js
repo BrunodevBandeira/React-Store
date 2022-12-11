@@ -1,6 +1,8 @@
 import React from 'react'
 import "./LoginPage.css";
 import { AuthContext } from '../../context/Auth';
+import Head from "../../components/Head";
+
 
 const LoginPage = () => {
 
@@ -16,6 +18,7 @@ const LoginPage = () => {
 
   return (
     <div id="login">
+      <Head title="Logar" description="LoginPage"/>
       <h1 className='title'> Login de sistema... </h1>
       <p> {String(authenticated)} </p>
       <form className="form" onSubmit={handleSubmit}>

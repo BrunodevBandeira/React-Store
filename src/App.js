@@ -12,3 +12,6 @@ const App = () => {
 };
 
 export default App;
+
+
+//npm install history react-router-dom@6.0.0-beta.0

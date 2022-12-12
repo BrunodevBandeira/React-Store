@@ -9,6 +9,8 @@ import SplitPage from "./pages/splitPage/SplitPage";
 import HomePage from "./pages/homePage/HomePage";
 import LoginPage from "./pages/loginPage/LoginPage";
 import NotFound from "./pages/notFound/NotFound";
+import Header from "./pages/header/Header";
+import Contato from "./pages/contatoPage/Contato";
 import RegisterPage from "./pages/registerPage/RegisterPage";
 import { AuthProvider, AuthContext  } from "./context/Auth";
 // import { useContext } from "react";
@@ -36,9 +38,11 @@ const AppRoutes = () => {
                 <Routes>
                     <Route exact path="/" element={<SplitPage />} />
                     <Route exact path="/login" element={ <LoginPage />} />
-                    <Route exact path="/home" element={ <Private>  <HomePage /> </Private> } />
                     <Route exact path="/register" element={ <RegisterPage /> } />
                     <Route exact path="*" element={ <NotFound /> } />
+                    <Header />
+                    <Route exact path="/home" element={ <Private>  <HomePage /> </Private> } />
+                    <Route exact path="/contact" element={  <Contato />  } />
                 </Routes>
             </AuthProvider>
         </Router>

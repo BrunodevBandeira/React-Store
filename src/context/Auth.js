@@ -27,7 +27,7 @@ export const AuthProvider = ({children}) => {
         const recoveredPassword = JSON.parse(recoveredUser).password;
         if(password === recoveredPassword) {
             navigate("/home");
-        }
+        };
     };
 
 

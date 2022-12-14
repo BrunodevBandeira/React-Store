@@ -3,7 +3,6 @@ import AppRouter from "./AppRoutes";
 import "./App.css";
 
 const App = () => {
-
   return(
     <div id="App">
         <AppRouter />

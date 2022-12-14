@@ -22,6 +22,7 @@
   top: 20%;
   transform: translateX(-50%);
   white-space: nowrap;
+  background: transparent !important;
 }
 
 #container .btn {
@@ -40,6 +41,7 @@
   text-transform: uppercase;
   width: 15rem;
   padding: 1.5rem;
+  background: transparent !important;
 }
 
 #container .split.left .btn:hover {
@@ -81,7 +83,7 @@
 
 .split.right {
   right: 0;
-  background: url(../../assets/pc7.jpg);
+  background: url(../../assets/pc10.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

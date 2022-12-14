@@ -4,7 +4,27 @@
     gap: 2rem;
 }
   
+
 #HomePage .nome {
     margin: 0.5rem 0;
 }
+
+
+#HomePage img {
+    margin-bottom: 2rem;
+    border-left: 5px solid #91fb5d;
+    transition: all .4s ease-in-out;
+}
+  
+#HomePage img:hover {
+    margin-bottom: 2rem;
+    border-left: 5px solid #017e01;
+}
+
+
+#HomePage h1 {
+    transition: all .4s ease-in-out;
+    color: #91fb5d;
+}
+
   

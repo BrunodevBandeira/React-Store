@@ -4,7 +4,9 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer id="footer">
-      <p> direitos reservados. </p>
+      <p> StoreHub © Todos os direitos reservados. <br />
+          Bruno Bandeira 
+      </p>
     </footer>
   );
 };

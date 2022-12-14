@@ -5,15 +5,13 @@ import {
         Routes,
         Navigate
 } from "react-router-dom";
-import Header from "./pages/header/Header";
-import Footer from "./pages/footer/Footer";
 import SplitPage from "./pages/splitPage/SplitPage";
-import HomePage from "./pages/homePage/HomePage";
 import LoginPage from "./pages/loginPage/LoginPage";
+import RegisterPage from "./pages/registerPage/RegisterPage";
+import HomePage from "./pages/homePage/HomePage";
 import NotFound from "./pages/notFound/NotFound";
 import Contato from "./pages/contatoPage/Contato";
 import Produto from "./pages/ProdutoPage/Produto";
-import RegisterPage from "./pages/registerPage/RegisterPage";
 import { AuthProvider, AuthContext  } from "./context/Auth";
 
 
@@ -34,7 +32,6 @@ const AppRoutes = () => {
     return(
         <Router>
             <AuthProvider>
-                <Header/>
                     <Routes>
                         <Route exact path="/" element={<SplitPage />} />
                         <Route exact path="login" element={ <LoginPage />} />
@@ -44,7 +41,6 @@ const AppRoutes = () => {
                         <Route exact path="contact" element={ <Contato /> } />
                         <Route exact path="*" element={ <NotFound /> } />
                     </Routes>
-                <Footer />
             </AuthProvider>
         </Router>
     );

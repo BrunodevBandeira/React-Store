@@ -61,9 +61,7 @@ const RegisterPage = () => {
                 </div>
 
                 <div  className="error">
-
-                 { password !== confirm ? <p>...errado...</p> : " " }
-
+                    {password !== confirm ?  <p>...errado...</p> : " "}
                 </div>
 
                 <div className="actions">

@@ -2,6 +2,9 @@ import React from 'react';
 import "./Produto.css";
 import { useParams } from 'react-router-dom';
 import Head from "../../components/Head";
+import Header from '../header/Header';
+import Footer from "../footer/Footer"
+
 
 const Produto = () => {
   const [produto, setProduto] = React.useState(null);
@@ -34,19 +37,23 @@ const Produto = () => {
   if( produto === null) return null;
 
   return (
-    <section id="produto" className='animeLeft'>
-      <Head title={`StoreHub | ${produto.nome}`}  description={`StoreHub | Produto da loja: ${produto.nome}`} />
-      <div>
-        {produto.fotos.map((foto) => (
-          <img key={foto.src} src={foto.src} alt={foto.titulo} />
-        ))}
-      </div>
-     <div>
-        <h1> {produto.nome}</h1>
-        <span className="preco"> R$ {produto.preco} </span>
-        <p className="descricao"> {produto.descricao} </p>
-     </div>
-    </section>
+    <nav>
+      <Header />
+        <section id="produto" className='animeLeft'>
+          <Head title={`StoreHub | ${produto.nome}`}  description={`StoreHub | Produto da loja: ${produto.nome}`} />
+          <div>
+            {produto.fotos.map((foto) => (
+              <img key={foto.src} src={foto.src} alt={foto.titulo} />
+            ))}
+          </div>
+        <div>
+            <h1> {produto.nome}</h1>
+            <span className="preco"> R$ {produto.preco} </span>
+            <p className="descricao"> {produto.descricao} </p>
+        </div>
+        </section>
+      <Footer />
+    </nav>
   );
 };
 

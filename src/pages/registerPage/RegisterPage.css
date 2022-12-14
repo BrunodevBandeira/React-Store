@@ -8,7 +8,14 @@
     padding: 0 2rem;
     background: url(../../assets/pc7.jpg);
     background-size: cover;
-  }
+}
+
+#register .title{
+    background: transparent !important;
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
 
 
 #register .form{
@@ -22,16 +29,19 @@
     padding: 0.5rem;
     border-radius: .8rem;
     padding-top: 1.8rem;
+    background: transparent !important;
 }
 
 #register .field {
     padding-bottom: 0.5rem;
+    background: transparent !important;
 }
 
 #register .field label {
     display: block;
     font-weight: 600;
     color: azure;
+    background: transparent !important;
 }
 
 #register .field input {
@@ -39,6 +49,7 @@
     height: 1.5rem;
     background: linear-gradient(to left, transparent, #ccc);
     transition: all 2s;
+    
 }
 
 #register .field input:hover {
@@ -53,6 +64,7 @@
 #register .actions {
     text-align: center;
     margin-top: 1rem;
+    background: transparent !important;
 }
 
 
@@ -60,6 +72,7 @@
     width: 15rem;
     height: 2rem; 
     background: #ccc; 
+    
 };
 
 #register .error {

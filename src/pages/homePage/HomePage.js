@@ -2,6 +2,8 @@ import React from 'react'
 import "./HomePage.css";
 import Head from "../../components/Head";
 import { Link } from "react-router-dom";
+import Header from '../header/Header';
+import Footer from "../footer/Footer";
 
 const HomePage = () => {
 
@@ -18,17 +20,21 @@ const HomePage = () => {
   console.log(produtos);
 
   return (
-    <section id="HomePage">
-        <Head title="StoreHub" description="HomePage"/>
-      <nav className="produtos animeLeft">
-          {produtos.map((produto => 
-              // <Link to={`produto/${produto.id}`} key={produto.id}>
-              <Link to={`/produto/${produto.id}`} key={produto.id}>
-                <img src={produto.fotos[0].src} alt={produto.fotos[0].titulo} />
-                  <h1> {produto.nome} </h1>
-              </Link>))}
-      </nav>
-    </section>
+    <nav>
+      <Header />
+        <section id="HomePage">
+            <Head title="StoreHub" description="HomePage"/>
+          <nav className="produtos animeLeft">
+              {produtos.map((produto => 
+                  // <Link to={`produto/${produto.id}`} key={produto.id}>
+                  <Link to={`/produto/${produto.id}`} key={produto.id}>
+                    <img src={produto.fotos[0].src} alt={produto.fotos[0].titulo} />
+                      <h1> {produto.nome} </h1>
+                  </Link>))}
+          </nav>
+        </section>
+      <Footer />
+    </nav>
   );
 };
 

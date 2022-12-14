@@ -29,7 +29,7 @@ const SplitPage = () => {
     };
 
     return(
-        <div className="container" onMouseMove={handleEffect}>
+        <div id="container" onMouseMove={handleEffect}>
             <Head title="Seja bem vindo" description="SplitPage"/>
             <div className="split left">
                 <h1> Logar... </h1>
